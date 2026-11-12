@@ -1339,14 +1339,14 @@
     magic-string "^0.25.1"
     rollup-pluginutils "^2.8.1"
 
-"@rollup/plugin-terser@0.4.4":
-  version "0.4.4"
-  resolved "https://registry.npmjs.org/@rollup/plugin-terser/-/plugin-terser-0.4.4.tgz"
-  integrity sha512-XHeJC5Bgvs8LfukDwWZp7yeqin6ns8RTl2B9avbejt6tZqsqvVoWI7ZTQrcNsfKEDWBTnTxM8nMDkO2IFFbd0A==
+"@rollup/plugin-terser@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-terser/-/plugin-terser-1.0.2.tgz#3686f1685669819874956b4bdb965cf21d9eb2d5"
+  integrity sha512-+UihHnuLnQDQ/9wog7ym+7oawCXkjTIo0WwkK7s//0mkktTN0VhYk6fGVxH+NtGzW064w5RCGgreMDxRVhHCzw==
   dependencies:
-    serialize-javascript "^6.0.1"
+    serialize-javascript "^7.0.3"
     smob "^1.0.0"
-    terser "^5.17.4"
+    terser "^5.49.2"
 
 "@rollup/pluginutils@^3.0.0", "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
@@ -1765,10 +1765,15 @@ acorn-walk@^8.0.0, acorn-walk@^8.0.2:
   dependencies:
     acorn "^8.11.0"
 
-acorn@^8.0.4, acorn@^8.1.0, acorn@^8.11.0, acorn@^8.5.0, acorn@^8.7.1, acorn@^8.8.0, acorn@^8.8.1, acorn@^8.8.2:
+acorn@^8.0.4, acorn@^8.1.0, acorn@^8.11.0, acorn@^8.5.0, acorn@^8.7.1, acorn@^8.8.0, acorn@^8.8.1:
   version "8.12.1"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.12.1.tgz"
   integrity sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==
+
+acorn@^8.15.0:
+  version "8.19.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.19.0.tgz#6b26fd97ce1cc9dc50bdf7ad305e9f1384d4f28a"
+  integrity sha512-oJlA3XiRm7Cyk6qFD2Jn8ak9B7jSy0qy00ADO3+8dpT0LSjFihQYv4C02LFCSYJV3Q37xYwwRy5m+IpIiUzqWw==
 
 agent-base@6:
   version "6.0.2"
@@ -6218,6 +6223,11 @@ serialize-javascript@^6.0.1:
   dependencies:
     randombytes "^2.1.0"
 
+serialize-javascript@^7.0.3:
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-7.1.4.tgz#477af55bdec0d831fa3b209245f673217fd27380"
+  integrity sha512-FqlEuoTq/zRmA4Lg6aOqyH3lCHbUtCB0bmHCeFniX2GBdDqMJM3FwdvEhlE5Pim1dlt2FfBdVPmUNNiGhhKqpw==
+
 set-blocking@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz"
@@ -6602,23 +6612,13 @@ terser@5.16.6:
     commander "^2.20.0"
     source-map-support "~0.5.20"
 
-terser@^5.17.4:
-  version "5.31.1"
-  resolved "https://registry.npmjs.org/terser/-/terser-5.31.1.tgz"
-  integrity sha512-37upzU1+viGvuFtBo9NPufCb9dwM0+l9hMxYyWfBA+fbwrPqNJAhbZ6W47bBFnZHKHTUBnMvi87434qq+qnxOg==
+terser@^5.26.0, terser@^5.49.2:
+  version "5.51.2"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.51.2.tgz#555912425a7f2ff7737425c3718fa76c7069f6ef"
+  integrity sha512-bWnjSNscmuI+GJze6ZupnHP8G/cTcsJF+bXCeQknk2SHQsgbNJnLrqiH9jZ2W4STPVXH2mDKKRX3iwPhc9Cn/Q==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
-    acorn "^8.8.2"
-    commander "^2.20.0"
-    source-map-support "~0.5.20"
-
-terser@^5.26.0:
-  version "5.31.6"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.31.6.tgz#c63858a0f0703988d0266a82fcbf2d7ba76422b1"
-  integrity sha512-PQ4DAriWzKj+qgehQ7LK5bQqCFNMmlhjR2PFFLuqGCpuCAauxemVBWwWOxo3UIwWQx8+Pr61Df++r76wDmkQBg==
-  dependencies:
-    "@jridgewell/source-map" "^0.3.3"
-    acorn "^8.8.2"
+    acorn "^8.15.0"
     commander "^2.20.0"
     source-map-support "~0.5.20"
 
